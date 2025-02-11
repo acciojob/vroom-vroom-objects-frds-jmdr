@@ -9,18 +9,22 @@
 			this.model= model;
 		}
 	}
-Car.prototype.getMakeModel() = function(){
-	return`${this.make} ${this.model}`;
+// Car.prototype.getMakeModel() = function(){
+// 	return`${this.make} ${this.model}`;
+		 getMakeModel() {
+        return `${this.make} ${this.model}`;
+    }
 }
+
 class SportsCar extends Car{
 	constructor(make, model, topSpeed) {
 		super(make, model);
 		this.topSpeed=topSpeed;
 		
 	}
-}
-SportsCar.prototype.getTopSpeed()= function() {
-	return this.topSpeed;
+  getTopSpeed() {
+        return this.topSpeed;
+    }
 }
 
 // Do not change the code below
