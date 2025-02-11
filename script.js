@@ -1,28 +1,23 @@
-// Complete the js code
-// function Car(make, model) {}
+// Car class
+class Car {
+    constructor(make, model) { // Fixed typo in constructor
+        this.make = make;
+        this.model = model;
+    }
 
-// function SportsCar(make, model, topSpeed) {}
-
-	class Car{
-		constroctor(make, model){
-			this.make= make;
-			this.model= model;
-		}
-	}
-// Car.prototype.getMakeModel() = function(){
-// 	return`${this.make} ${this.model}`;
-		 getMakeModel() {
+    getMakeModel() {
         return `${this.make} ${this.model}`;
     }
 }
 
-class SportsCar extends Car{
-	constructor(make, model, topSpeed) {
-		super(make, model);
-		this.topSpeed=topSpeed;
-		
-	}
-  getTopSpeed() {
+// SportsCar class extending Car
+class SportsCar extends Car {
+    constructor(make, model, topSpeed) {
+        super(make, model);
+        this.topSpeed = topSpeed;
+    }
+
+    getTopSpeed() {
         return this.topSpeed;
     }
 }
